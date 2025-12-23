@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Note Keep</title>
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<!-- Huge Icons -->
+		<link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+		<style type="text/css">
+			body {
+				font-family: "Plus Jakarta Sans";
+				background-color: #F8FBFC;
+			}
+			.container {
+				width: 390px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.judul{
+				margin-top: 20px;
+				font-weight: bold;
+			}
+			.judul p{	
+				color: #777777;
+				font-size: 10pt;			
+				margin-bottom: 0;
+			}
+			.judul h2{
+				margin-top: 0;
+				font-size: 16pt;
+			}
+			.header{
+				background-color: white;
+				margin-top: 35px;
+			}
+			.form-header{
+				display: flex;
+				align-items: center;
+			}
+			.form-header span{
+				font-size: 12px;
+				font-weight: bold;
+			}
+			.logo-create{
+				font-size: 30px;
+				padding: 10px;
+				color: #19C3E6;
+			}
+			.input{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.input-title{
+				width: calc(100% - 23px);
+				height: 45px;
+				padding-left: 10px;
+				padding-right: 10px;
+				border: 2px solid #C4C4C4;
+				border-radius: 8px;
+				margin-bottom: 10px;
+				color: #7E7E7E;
+			}
+			.input-note{
+				width: calc(100% - 23px);
+				height: 100px;
+				padding-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				border-radius: 8px;
+				border: 2px solid #C4C4C4;
+				color: #7E7E7E;
+				resize: vertical;
+			}
+			.btn-add-note {
+		      background-color: #19c3e6;
+		      color: white;
+		      font-weight: bold;
+		      border: none;
+		      display: block;
+		      margin: auto;
+		      margin-top: 20px;
+		      width: 100%;
+		      padding: 8px;
+		      border-radius: 5px;
+		    }
+		    .your-notes{
+		    	padding-top: 15px;
+		    }
+		    .your-notes h2{
+		    	font-size: 16pt;
+		    	font-weight: bold;
+		    }
+		    .note-slot-one{
+		    	background-color: white;
+		    }
+		    .header-slot-one{
+		    	padding-bottom: 10px;
+		    }
+		    .left-header-slot-one{
+		    	padding-left: 10px;
+		    }
+		    .left-header-slot-one h3{
+		    	padding-top: 10px;
+		    	margin-bottom: 0px;
+		    	font-size: 14pt;
+		    	font-weight: bold;
+		    }
+		    .left-header-slot-one label{
+		    	color: #4E8B97;
+		    	font-size: 12pt;
+		    }
+		    .right-header-slot-one{
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="judul">
+				<p>DASHBOARD</p>
+				<h2>Hi, student</h2>
+			</div>
+			<div class="header">
+				<div class="form-header">
+					<i class="hgi hgi-stroke hgi-property-edit logo-create"></i>
+					<span>Create New Note</span>
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Note title" class="input-title">
+					<textarea class="input-note" placeholder="Write your thoughts here..."></textarea>
+					<button class="btn-add-note">+ Add Note</button>
+				</div>
+			</div>
+			<div class="your-notes">
+				<h2>Your Notes</h2>
+				<div class="note-slot-one">
+					<div class="header-slot-one">
+						<div class="left-header-slot-one">
+							<h3>React Hooks Study</h3>
+							<label>Oct 24, 2025</label>
+						</div>
+						<div class="right-header-slot-one">
+							<i class="hgi hgi-stroke hgi-delete-03"></i>
+							<i class="hgi hgi-stroke hgi-edit-02"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
