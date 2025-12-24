@@ -22,16 +22,24 @@
 			}
 			.judul{
 				margin-top: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.judul-teks{
 				font-weight: bold;
 			}
-			.judul p{	
+			.judul-teks p{	
 				color: #777777;
 				font-size: 10pt;			
 				margin-bottom: 0;
 			}
-			.judul h2{
+			.judul-teks h2{
 				margin-top: 0;
 				font-size: 16pt;
+			}
+			.logo-keluar{
+				font-size: 30px;
 			}
 			.header{
 				background-color: white;
@@ -51,6 +59,7 @@
 				color: #19C3E6;
 			}
 			.input{
+				margin-top: 10px;
 				margin-left: 10px;
 				margin-right: 10px;
 			}
@@ -98,14 +107,16 @@
 		    	background-color: white;
 		    }
 		    .header-slot-one{
-		    	padding-bottom: 10px;
+		    	justify-content: space-between;
+		    	align-items: center;
+		    	display: flex;
 		    }
 		    .left-header-slot-one{
 		    	padding-left: 10px;
 		    }
 		    .left-header-slot-one h3{
-		    	padding-top: 10px;
 		    	margin-bottom: 0px;
+		    	margin-top: 10px;
 		    	font-size: 14pt;
 		    	font-weight: bold;
 		    }
@@ -114,14 +125,59 @@
 		    	font-size: 12pt;
 		    }
 		    .right-header-slot-one{
+		    	padding-right: 10px;
+		    	font-size: 20px;
+		    }
+		    .text-slot-one{
+		    	padding: 10px;
+		    }
+		    .text-slot-one p{
+		    	font-size: 12pt;
+		    	text-align: left;
+		    }
+		    .note-slot-two{
+		    	margin-top: 15px;
+		    	background-color: white;
+		    }
+		    .header-slot-two{
+		    	justify-content: space-between;
+		    	align-items: center;
+		    	display: flex;
+		    }
+		    .left-header-slot-two{
+		    	padding-left: 10px;
+		    }
+		    .left-header-slot-two h3{
+		    	margin-bottom: 0px;
+		    	margin-top: 10px;
+		    	font-size: 14pt;
+		    	font-weight: bold;
+		    }
+		    .left-header-slot-two label{
+		    	color: #4E8B97;
+		    	font-size: 12pt;
+		    }
+		    .right-header-slot-two{
+		    	padding-right: 10px;
+		    	font-size: 20px;
+		    }
+		    .text-slot-two{
+		    	padding: 10px;
+		    }
+		    .text-slot-two p{
+		    	font-size: 12pt;
+		    	text-align: left;
 		    }
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="judul">
-				<p>DASHBOARD</p>
-				<h2>Hi, student</h2>
+				<div class="judul-teks">
+					<p>DASHBOARD</p>
+					<h2>Hi, student@uni.edu</h2>
+				</div>
+				<i class="hgi hgi-stroke hgi-logout-circle-02 logo-keluar"></i>
 			</div>
 			<div class="header">
 				<div class="form-header">
@@ -143,9 +199,30 @@
 							<label>Oct 24, 2025</label>
 						</div>
 						<div class="right-header-slot-one">
-							<i class="hgi hgi-stroke hgi-delete-03"></i>
 							<i class="hgi hgi-stroke hgi-edit-02"></i>
+							<i class="hgi hgi-stroke hgi-delete-03"></i>
+						
 						</div>
+					</div>
+					<div class="text-slot-one">
+						<p>Remember to review useEffect dependencies array. Ideally, include all variables used inside the effect.</p>
+					</div>
+				</div>
+
+				<div class="note-slot-two">
+					<div class="header-slot-two">
+						<div class="left-header-slot-two">
+							<h3>React Hooks Study</h3>
+							<label>Oct 24, 2025</label>
+						</div>
+						<div class="right-header-slot-two">
+							<i class="hgi hgi-stroke hgi-edit-02"></i>
+							<i class="hgi hgi-stroke hgi-delete-03"></i>
+						
+						</div>
+					</div>
+					<div class="text-slot-two">
+						<p>Remember to review useEffect dependencies array. Ideally, include all variables used inside the effect.</p>
 					</div>
 				</div>
 			</div>
